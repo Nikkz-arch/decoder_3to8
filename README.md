@@ -65,10 +65,8 @@ The hierarchical design uses two instances of `decoder2_4`:
 ```verilog
 decoder2_4 d1(.a0(a0), .a1(a1), .en(~a2), .d(y[3:0]));
 decoder2_4 d2(.a0(a0), .a1(a1), .en(a2),  .d(y[7:4]));
-Simulation Results (TCL Console)
-ini
-Copy
-Edit
+
+Simulation Results (TCL Console):
 time=0 a2=0 a1=0 a0=0 y=00000001
 time=10 a2=0 a1=0 a0=1 y=00000010
 time=20 a2=0 a1=1 a0=0 y=00000100
@@ -77,9 +75,9 @@ time=40 a2=1 a1=0 a0=0 y=00010000
 time=50 a2=1 a1=0 a0=1 y=00100000
 time=60 a2=1 a1=1 a0=0 y=01000000
 time=70 a2=1 a1=1 a0=1 y=10000000
+
 Tools Used
 Language: Verilog HDL
-
 Simulator: Xilinx Vivado
 
 Author
